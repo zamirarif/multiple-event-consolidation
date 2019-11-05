@@ -1,10 +1,16 @@
 # multiple-event-consolidation
 
+Following StackOverflow link explaing the problem 
+
+https://stackoverflow.com/questions/58507380/event-consolidation-when-there-is-no-defined-time-window-for-event-arrival?noredirect=1#comment103442970_58507380
 
 ## Stateful operation using Processor API of Kafka Stream 
+Following is the Processor Topology which we used to solve the problem describe in stackOverflow link. 
 
+![](/custom-processor-topology.png)
 
-[[/custom-processor-topology.png]]
+For the basics of processor API. Please follow the confluent's link mentioned below:
+https://docs.confluent.io/current/streams/developer-guide/processor-api.html
 
 ## Preparation to run the project
 
@@ -54,3 +60,7 @@ kafka-console-consumer --bootstrap-server broker:29092 \
 --property value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
 
 ```
+
+Once you have created the topics. Please run the code and start producing the message. 
+
+
