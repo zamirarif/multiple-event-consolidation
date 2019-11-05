@@ -1,0 +1,7 @@
+C:\Users\zamir.arif\workspace-kstream\kafka-streams-course\bank-balance-exactly-once\src\main\java\com\github\zamirarif\kafka\streams\EventConsolidationProcessor.java
+C:\Users\zamir.arif\workspace-kstream\kafka-streams-course\bank-balance-exactly-once\src\main\java\com\github\zamirarif\kafka\model\MigrationCandidateEvent.java
+C:\Users\zamir.arif\workspace-kstream\kafka-streams-course\bank-balance-exactly-once\src\main\java\com\github\zamirarif\kafka\serde\JsonSerializer.java
+C:\Users\zamir.arif\workspace-kstream\kafka-streams-course\bank-balance-exactly-once\src\main\java\com\github\zamirarif\kafka\serde\JsonDeserializer.java
+C:\Users\zamir.arif\workspace-kstream\kafka-streams-course\bank-balance-exactly-once\src\main\java\com\github\zamirarif\kafka\streams\EventConsolidationApp.java
+C:\Users\zamir.arif\workspace-kstream\kafka-streams-course\bank-balance-exactly-once\src\main\java\com\github\zamirarif\kafka\model\StatusConsolidationEvent.java
+C:\Users\zamir.arif\workspace-kstream\kafka-streams-course\bank-balance-exactly-once\src\main\java\com\github\zamirarif\kafka\streams\ProcessingUtil.java

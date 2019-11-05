@@ -1,0 +1,7 @@
+com\github\zamirarif\kafka\streams\EventConsolidationApp.class
+com\github\zamirarif\kafka\model\MigrationCandidateEvent.class
+com\github\zamirarif\kafka\serde\JsonDeserializer.class
+com\github\zamirarif\kafka\model\StatusConsolidationEvent.class
+com\github\zamirarif\kafka\serde\JsonSerializer.class
+com\github\zamirarif\kafka\streams\EventConsolidationProcessor.class
+com\github\zamirarif\kafka\streams\ProcessingUtil.class
