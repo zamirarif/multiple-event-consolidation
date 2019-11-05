@@ -4,7 +4,7 @@
 ## Stateful operation using Processor API of Kafka Stream 
 
 
-[[custom-processor-topology.png]]
+[[/custom-processor-topology.png]]
 
 ## Preparation to run the project
 
