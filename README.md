@@ -3,6 +3,9 @@
 
 ## Stateful operation using Processor API of Kafka Stream 
 
+
+[[custom-processor-topology.png]]
+
 ## Preparation to run the project
 
 Please create the following topics in your local/remote Kafka Cluster.
