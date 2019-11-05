@@ -1,6 +1,6 @@
 # multiple-event-consolidation
 
-Following StackOverflow link explaing the problem 
+Following StackOverflow link explains the problem 
 
 https://stackoverflow.com/questions/58507380/event-consolidation-when-there-is-no-defined-time-window-for-event-arrival?noredirect=1#comment103442970_58507380
 
