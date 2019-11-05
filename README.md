@@ -18,7 +18,7 @@ kafka-topics --create --zookeeper zookeeper:2181 --replication-factor 1 --partit
 
 Start the producer as described below:
 
-kafka-topics --list --zookeeper zookeeper:2181
+
 ```
 kafka-console-producer \
 --broker-list broker:29092 \
