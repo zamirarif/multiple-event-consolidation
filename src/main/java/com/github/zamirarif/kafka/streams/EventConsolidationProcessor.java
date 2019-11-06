@@ -14,7 +14,11 @@ import com.github.zamirarif.kafka.model.MigrationCandidateEvent;
 import com.github.zamirarif.kafka.model.StatusConsolidationEvent;
 import com.github.zamirarif.kafka.model.StatusForwardEvent;
 
-
+/**
+ * test
+ * @author zamir.arif
+ *
+ */
 public class EventConsolidationProcessor extends AbstractProcessor<String, MigrationCandidateEvent> {
 
     private KeyValueStore<String, StatusConsolidationEvent> statusStore;
