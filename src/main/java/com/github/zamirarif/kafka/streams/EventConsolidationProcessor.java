@@ -76,7 +76,8 @@ public class EventConsolidationProcessor extends AbstractProcessor<String, Migra
     			statusForwardEvent.setMeterPointReference(entry.value.getMeterPointReference());
     			statusForwardEvent.setMigrationCandidateNumber(entry.value.getMigrationCandidateNumber());
     			statusForwardEvent.setMigrationStatus("Ready for extract 2");
-    			this.statusStore.put(entry.key, null);
+    			//this.statusStore.put(entry.key, null);
+    			this.statusStore.delete(entry.key);
     			key= entry.key;
     			context.forward(key, statusForwardEvent);
     			this.context.commit();
@@ -109,7 +110,7 @@ public class EventConsolidationProcessor extends AbstractProcessor<String, Migra
         	while (iter.hasNext()) {
                 KeyValue<String, StatusConsolidationEvent> entry = iter.next();
               //  context.forward(entry.key, entry.value);
-                
+                System.out.println("Data in state store : "+ entry.key + " " + entry.value);
             }
             iter.close();
          // commit the current processing progress

@@ -77,7 +77,7 @@ public class EventConsolidationApp {
         streams.start();
 
         // print the processor topology
-        System.out.println("Streams Topology"+builder.describe());
+        System.out.println(builder.describe());
 
         // shutdown hook to correctly close the streams application
         Runtime.getRuntime().addShutdownHook(new Thread(streams::close));
