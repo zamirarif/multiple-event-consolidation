@@ -26,7 +26,7 @@ public class EventConsolidationProcessor extends AbstractProcessor<String, Migra
        
         StatusConsolidationEvent statusConsolidationEvent = null;
         /** create or update the record in stateStore [RockDB] **/
-        
+         
         if(migrationCandidateId!=null){
         	statusConsolidationEvent = statusStore.get(migrationCandidateId);
        }
