@@ -72,7 +72,8 @@ public class EventConsolidationProcessor extends AbstractProcessor<String, Migra
     			statusForwardEvent.setMeterPointReference(entry.value.getMeterPointReference());
     			statusForwardEvent.setMigrationCandidateNumber(entry.value.getMigrationCandidateNumber());
     			statusForwardEvent.setMigrationStatus("Ready for extract 2");
-    			this.statusStore.put(entry.key, null);
+    			//this.statusStore.put(entry.key, null);
+    			this.statusStore.delete(entry.key);
     			key= entry.key;
     			context.forward(key, statusForwardEvent);
     			this.context.commit();
@@ -96,15 +97,16 @@ public class EventConsolidationProcessor extends AbstractProcessor<String, Migra
     	this.context = context;
     	
     	// retrieve the key-value store named "Counts"
-    	statusStore = (KeyValueStore) context.getStateStore("status-consolidation");
+    	statusStore = (KeyValueStore<String,StatusConsolidationEvent>) context.getStateStore("status-consolidation");
     	
-    	// schedule a punctuate() method every second based on event-time
-        this.context.schedule(10000, PunctuationType.STREAM_TIME, (timestamp) -> {
+    	// schedule a punctuate() method every 10 second based on event-time
+        this.context.schedule(10000, PunctuationType.WALL_CLOCK_TIME, (timestamp) -> {
         	KeyValueIterator<String, StatusConsolidationEvent> iter = this.statusStore.all();
             
         	while (iter.hasNext()) {
                 KeyValue<String, StatusConsolidationEvent> entry = iter.next();
               //  context.forward(entry.key, entry.value);
+                System.out.println("Data in state store : "+ entry.key + " " + entry.value);
                 
             }
             iter.close();
